@@ -1,0 +1,35 @@
+-Some Special functions that C++ Classes give you when you create a class/object
+
+1. Constructor
+   - that is responsible for creating an object
+   - gets called automatically and is called once.
+   - same name as class name.
+   - Parametrised Constructor:
+   	>when u pass some parameters in a constructor.
+
+   	Note: Each object can call only one constructor be it parametrised or default
+
+   	Constructor Overloading:
+   	when different constructors are defined with the same name it is called CO. They are differentiated by the the diff parameters that are passed in diff Constructors.
+
+2. Copy Constructor
+	-make a copy of an object
+	-exists by default
+
+	So when u need to make your own copy constructor?
+	-Shallow Copy
+	-you have to make your own copy constructor if a deep copy is needed.
+	-deep copy is needed if a pointer is pointing to the same mem location for two objects, mainly in case of dynamic mem alloc.
+
+3. Copy Assignment Operator
+	-copies when u do assignment
+	-Car d=c; //copy constructor
+	-Car d;
+	 d=c; //copy assignmnet operator\
+	-we can write our own copy assignment operator to make a deep copy many times
+
+4. Destructor
+   - Clear out the mem occupied by the object
+   - automatically when the object goes out of scope.
+   - normally no need to write destructors but 
+     in case of dynamically declared obejcts we need  to make it explicitly.
