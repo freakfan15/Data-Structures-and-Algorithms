@@ -36,6 +36,41 @@ int main(int argc, char const *argv[])
 	for(auto it=l2.begin(); it!=l2.end(); it++){
 		cout<<(*it)<<" -> ";
 	}
+	cout<<endl;
+
+	//insertings ome more fruits
+	l2.push_back("orange");
+	l2.push_back("guava");
+	//cout<<endl<<"remove a fruit: ";
+	//remove a fruit
+	//string f;
+	//cin>>f;
+	//l2.remove(f);
+	for(auto it=l2.begin(); it!=l2.end(); it++){
+		cout<<(*it)<<" -> ";
+	}
+
+	//remove one or more elements from the list at "a particular index" using iterators
+	cout<<endl;
+	auto it=l2.begin();
+	it++; it++; //moving at the third item
+
+	//l2.erase(it);
+	cout<<(*it);
+
+	l2.erase(it);
+	cout<<endl;
+	for(auto it=l2.begin(); it!=l2.end(); it++){
+		cout<<(*it)<<" -> ";
+	}
+	cout<<endl;
+	//inserting  an item at somewhere in b/w
+	it=l2.begin();
+	it++;
+	l2.insert(it, "Fruit juice");
+	for(auto it=l2.begin(); it!=l2.end(); it++){
+		cout<<(*it)<<" -> ";
+	}
 
 
 
