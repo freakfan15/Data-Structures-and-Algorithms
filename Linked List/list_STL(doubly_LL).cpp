@@ -72,9 +72,5 @@ int main(int argc, char const *argv[])
 		cout<<(*it)<<" -> ";
 	}
 
-
-
-
-
 	return 0;
 }
