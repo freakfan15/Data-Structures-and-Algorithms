@@ -47,6 +47,7 @@ int main(int argc, char const *argv[])
 	g.addEdge(1,2);
 	g.addEdge(2,3);
 
+	//printing the visited using bfs travesal considering 0 as the source node. 
 	g.bfs(0);
 
 
