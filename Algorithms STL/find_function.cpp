@@ -13,7 +13,7 @@ int main(){
 	cout<<"Enter  element you want to search: ";
 	cin>>key;
 	auto it= find(arr, arr+n, key);
-
+	
 	int index= it-arr;
 
 	if(index==n){  //it means whole array has been traversed but the element hasn't been found.
