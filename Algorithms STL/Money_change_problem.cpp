@@ -17,7 +17,7 @@ int main(int argc, char const *argv[])
 	int money=168;
 	
 	while(money>0){
-		int lb = lower_bound(coins, coins+n, money, compare)- coins -1;
+		int lb = lower_bound(coins, coins+n, money, compare)- coins -1; //-1 cuz we will get lb=200 for 168
 		int m= coins[lb]; //finding coin for the particular index
 		cout<<m<<", ";
 		money = money -m;
