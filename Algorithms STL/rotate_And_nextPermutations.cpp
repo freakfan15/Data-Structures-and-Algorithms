@@ -26,7 +26,7 @@ int main(int argc, char const *argv[])
 	}
 	cout<<endl;
 	//next permutations finds the permutation that is just greater than the current arrangement
-	vector<int> v1{1,2,3};
+	vector<int> v1{3,2,1};
 	next_permutation(v1.begin(), v1.end());
 
 	for(int x:v1){
