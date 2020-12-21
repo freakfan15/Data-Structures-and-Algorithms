@@ -31,9 +31,10 @@ int main(){
 	
 	int t;
 	cin>>t;
-	int n,m;
-	cin>>n>>m;
+	
 	while(t--){
+		int n,m;
+		cin>>n>>m;
 		int a[100];
 		for(int i=0; i<n; i++){
 			cin>>a[i];
